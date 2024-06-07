@@ -50,8 +50,8 @@ class CuratorServiceProvider extends PackageServiceProvider
         Blade::component('curator-curation', Curation::class);
 
         FilamentAsset::register([
-            AlpineComponent::make('curation', __DIR__ . '/../resources/dist/curation.js'),
-            Css::make('curator', __DIR__ . '/../resources/dist/curator.css')->loadedOnRequest(),
+            AlpineComponent::make('curation', './vendor/awcodes/filament-curator/resources/dist/curation.js'),
+            Css::make('curator', './vendor/awcodes/filament-curator/resources/dist/curator.css'),
         ], 'awcodes/curator');
     }
 }
