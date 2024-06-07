@@ -66,11 +66,6 @@
         </div>
         <label class="border border-gray-300 dark:border-gray-700 rounded-md relative flex items-center">
             <span class="sr-only">{{ trans('curator::views.panel.search_label') }}</span>
-            <x-filament::icon
-                alias="curator::icons.check"
-                icon="heroicon-s-magnifying-glass"
-                class="w-4 h-4 absolute top-1.5 left-2 rtl:left-0 rtl:right-2 dark:text-gray-500"
-            />
             <input
                 type="search"
                 placeholder="{{ trans('curator::views.panel.search_placeholder') }}"
@@ -188,7 +183,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center justify-start mt-auto gap-3 py-3 px-4 border-t border-gray-300 bg-gray-200 dark:border-gray-800 dark:bg-black/10">
+                    <div class="flex items-center justify-start mt-auto gap-3 py-3 px-4 border-gray-800 bg-black/10 dark:border-gray-800 dark:bg-black/10">
                         @if (count($selected) !== 1)
                             <div>
                                 {{ $this->addFilesAction }}
